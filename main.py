@@ -11,16 +11,16 @@ running= True
 
 while(running==True):
   a= int(input("Player1: add..."))
-  if(a=="one"):
+  if(a==1):
     print(addOne(a))
-    else:
-      print(addTwo(a))
+  else:
+    print(addTwo(a))
 
   b= int(input("player2: add..."))
-  if(b=="one"):
+  if(b==1):
     print(addOne(b))
-    else:
-      print(addtwo(b))
+  else:
+    print(addtwo(b))
 
   if(i==20 or i>=20):
-    print()
+    running= False
