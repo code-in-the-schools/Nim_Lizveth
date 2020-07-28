@@ -1,26 +1,39 @@
+total=0
 #functions
 def addOne():
-  return(i+1)
+  total+=1
 #def() end
 def addTwo():
-  return(i+2)
+  total+=2
 #def() end
 
-i=0
 running= True
-
+#Choose player to go first
 while(running==True):
-  a= int(input("Player1: add..."))
-  if(a==1):
-    print(addOne(a))
-  else:
-    print(addTwo(a))
+  first= input("Who is going first?(SAY 'Me') ")
+  if (first=="Me"):
 
-  b= int(input("player2: add..."))
-  if(b==1):
-    print(addOne(b))
-  else:
-    print(addtwo(b))
+    a= int(input("Player1: add..."))
+    if(a==1):
+      total+=1
+      print(total)
+    else:
+      
+      print(total)
 
-  if(i==20 or i>=20):
-    running= False
+    b= int(input("player2: add..."))
+    if(b==1):
+      total+=1
+      print(total)
+    else:
+      addTwo()
+      print(total)
+    
+    if(total>=20):
+      running= False
+#while(0 end)
+
+if(total>=20  ):
+  print("PLAYER1 WINS!!!!")     
+else:
+  print("PLAYER2 WINS!!")
